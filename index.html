@@ -33,7 +33,7 @@
   <aside class="sidebar">
     <div class="brand">仓库物流系统<small>ADMIN CONSOLE / CONTROL PANEL</small></div>
     <div class="menu-title">核心导航</div>
-    <div class="menu">
+    <div class="menu"><div class="item"><b>商品管理</b><span>商品信息、库存数量、阈值配置与预警。</span><div class="submenu"><div class="subitem">商品列表</div><div class="subitem">库存阈值</div></div></div>
       <div class="item active"><b>总览仪表盘</b><span>查看系统状态、关键指标与今日处理概览。</span></div>
       <div class="item"><b>商品管理</b><span>管理商品信息、分类、库存数量与上下限策略。</span></div>
       <div class="item"><b>仓储作业</b><span>到货登记、上架确认、拣货、打包复核、盘点与差异处理。</span></div>
@@ -103,7 +103,7 @@
         <div class="panel">
           <h2>审计与库存阈值</h2>
           <p>本次交付最大的价值之一，是在不改数据库结构的前提下，把审计流与库存上下限告警补了出来。这一块很适合在首页里做成管理视角的核心面板。</p>
-          <div class="metric-grid">
+          <div class="metric-grid"><div class="metric"><b>图表概览</b><span>后续可接订单量、库存告警、签收效率、调度分布等真实图表。</span></div>
             <div class="metric"><b>/audit/recent</b><span>聚合订单、物流状态、出入库、公告、反馈，充当系统日志查看入口。</span></div>
             <div class="metric"><b>阈值管理</b><span>通过 config 表存储 min / max，提供阈值保存、列表和告警检查接口。</span></div>
             <div class="metric"><b>不改数据库</b><span>本次遵循“不改表结构”原则，更适合低风险补缺口交付。</span></div>
